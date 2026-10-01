@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="S. Surya — Electronics & Communication Engineering student and aspiring Embedded Engineer." />
+  <title>S. Surya | Embedded Engineer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="noise"></div>
+
+  <header class="nav-wrap">
+    <nav class="nav container">
+      <a class="brand" href="#home"><span>&lt;</span> SURYA <span>/&gt;</span></a>
+      <button class="menu-btn" aria-label="Open menu">☰</button>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#expertise">Expertise</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#github">GitHub</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <a class="nav-resume" href="assets/Surya_Resume.pdf" target="_blank">Resume ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero container">
+      <div class="hero-copy reveal">
+        <div class="terminal-line"><span class="dot"></span> system.status = "open_to_opportunities";</div>
+        <p class="eyebrow">// hello_world.cpp</p>
+        <h1>Hi, I'm <span>S. Surya</span><br><em>Embedded Engineer</em> in progress.</h1>
+        <p class="hero-text">
+          Electronics & Communication Engineering student passionate about embedded systems,
+          hardware interfacing and building practical technology solutions with C, C++ and Arduino.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">View My Work <span>→</span></a>
+          <a class="btn ghost" href="assets/Surya_Resume.pdf" target="_blank">Download Resume <span>↓</span></a>
+        </div>
+
+        <div class="quick-links">
+          <a href="https://github.com/surya-codes-24" target="_blank">GitHub ↗</a>
+          <a href="https://linkedin.com/in/surya-s-a04950331" target="_blank">LinkedIn ↗</a>
+          <a href="mailto:Suryasundarraj24@gmail.com">Email ↗</a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="code-card">
+          <div class="window-bar"><span></span><span></span><span></span><small>surya.cpp</small></div>
+          <pre><code><b>#include</b> &lt;Arduino.h&gt;
+
+<span class="cyan">void</span> <span class="yellow">setup</span>() {
+  Serial.begin(<span class="green">9600</span>);
+  pinMode(GAS_SENSOR, INPUT);
+}
+
+<span class="cyan">void</span> <span class="yellow">loop</span>() {
+  <span class="cyan">int</span> gas = analogRead(GAS_SENSOR);
+
+  <span class="pink">if</span> (gas &gt; THRESHOLD) {
+    triggerAlert();
+  }
+}</code></pre>
+        </div>
+        <div class="profile-card">
+          <div class="profile-ring"><img src="assets/profile.jpg" alt="S. Surya"></div>
+          <div><strong>S. Surya</strong><small>ECE • Embedded Systems</small></div>
+          <span class="status">●</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <div class="section-head reveal"><span>01.</span><h2>About Me</h2></div>
+      <div class="about-grid">
+        <div class="about-copy reveal">
+          <p class="lead">I'm an Electronics and Communication Engineering student focused on turning hardware ideas into practical embedded solutions.</p>
+          <p>I enjoy working with C, C++, Arduino UNO and hardware interfacing. Through projects and internships, I've gained exposure to embedded application development, testing, debugging and hardware-software integration.</p>
+          <p>I'm continuously learning, experimenting and looking for opportunities where I can grow as an Embedded Engineer while contributing to real-world engineering projects.</p>
+        </div>
+        <div class="about-panel reveal">
+          <div class="stat"><strong>7.9</strong><span>CGPA / 10</span></div>
+          <div class="stat"><strong>2027</strong><span>Expected Graduation</span></div>
+          <div class="stat"><strong>1+</strong><span>Embedded Internship</span></div>
+          <div class="stat"><strong>120h</strong><span>EV Skilling</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="expertise" class="section container">
+      <div class="section-head reveal"><span>02.</span><h2>Area of Expertise</h2></div>
+      <div class="skills-grid">
+        <article class="skill-card reveal"><div class="icon">⌘</div><h3>Programming</h3><div class="tags"><span>C</span><span>C++</span></div></article>
+        <article class="skill-card reveal"><div class="icon">◉</div><h3>Embedded Systems</h3><div class="tags"><span>Arduino UNO</span><span>Embedded Fundamentals</span></div></article>
+        <article class="skill-card reveal"><div class="icon">⚙</div><h3>Hardware</h3><div class="tags"><span>Gas Sensor</span><span>Hardware Interfacing</span></div></article>
+        <article class="skill-card reveal"><div class="icon">◈</div><h3>Engineering Skills</h3><div class="tags"><span>Problem Solving</span><span>Debugging</span><span>Teamwork</span><span>Adaptability</span></div></article>
+        <article class="skill-card reveal"><div class="icon">EV</div><h3>EV Technology</h3><div class="tags"><span>EV Architecture</span><span>BMS</span><span>Manufacturing</span><span>Automotive Standards</span></div></article>
+        <article class="skill-card reveal"><div class="icon">↗</div><h3>Tools & Platforms</h3><div class="tags"><span>Git</span><span>GitHub</span><span>Arduino</span></div></article>
+      </div>
+    </section>
+
+    <section id="projects" class="section container">
+      <div class="section-head reveal"><span>03.</span><h2>Featured Project</h2></div>
+      <div class="project-feature reveal">
+        <div class="project-number">01</div>
+        <div class="project-body">
+          <div class="project-meta">EMBEDDED SYSTEMS • ARDUINO</div>
+          <h3>LPG Gas Sensing & Alert System</h3>
+          <p>An embedded safety system designed to detect LPG leakage and provide an early warning alert using a gas sensor and Arduino UNO.</p>
+          <div class="tags"><span>Arduino UNO</span><span>Gas Sensor</span><span>C++</span></div>
+          <div class="project-actions"><a class="btn primary small" href="https://github.com/surya-codes-24" target="_blank">GitHub ↗</a><a class="btn ghost small" href="#contact">Discuss Project</a></div>
+        </div>
+        <div class="project-visual"><div class="circuit"><span></span><span></span><span></span><i></i><i></i><i></i></div><b>GAS<br>ALERT</b></div>
+      </div>
+    </section>
+
+    <section id="experience" class="section container">
+      <div class="section-head reveal"><span>04.</span><h2>Experience</h2></div>
+      <div class="timeline">
+        <article class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">1 MONTH</div>
+          <div class="timeline-card">
+            <p class="label">INTERNSHIP</p>
+            <h3>Embedded Systems Intern — Spirio</h3>
+            <ul>
+              <li>Assisted with embedded systems development and basic hardware interfacing.</li>
+              <li>Applied programming fundamentals to support embedded application development.</li>
+              <li>Participated in testing, debugging and troubleshooting.</li>
+              <li>Gained exposure to hardware-software integration and engineering workflows.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="certifications" class="section container">
+      <div class="section-head reveal"><span>05.</span><h2>Certifications & Learning</h2></div>
+      <div class="cert-grid">
+        <article class="cert-card reveal"><span class="cert-no">01</span><p>EMBEDDED SYSTEMS</p><h3>Embedded Systems Internship Certificate</h3><small>Spirio • 2026</small></article>
+        <article class="cert-card reveal"><span class="cert-no">02</span><p>ELECTRIC VEHICLES</p><h3>Advanced EV Manufacturing Skilling</h3><small>120 hrs • GTT Foundation • Supported by Accenture • 2026</small></article>
+        <article class="cert-card reveal"><span class="cert-no">03</span><p>EMBEDDED + IOT</p><h3>Embedded Systems & IoT Internship</h3><small>Nirloba IT Pvt. Ltd.</small></article>
+      </div>
+    </section>
+
+    <section id="github" class="section container">
+      <div class="section-head reveal"><span>06.</span><h2>GitHub Project Work</h2></div>
+      <div class="github-box reveal">
+        <div>
+          <p class="eyebrow">// github.com/surya-codes-24</p>
+          <h3>Building, learning & documenting.</h3>
+          <p>Explore my repositories, experiments and future embedded projects.</p>
+        </div>
+        <a class="btn primary" href="https://github.com/surya-codes-24" target="_blank">Open GitHub ↗</a>
+      </div>
+      <div id="repo-grid" class="repo-grid">
+        <div class="repo-placeholder">Loading public repositories…</div>
+      </div>
+    </section>
+
+    <section id="interests" class="section container">
+      <div class="section-head reveal"><span>07.</span><h2>Interests</h2></div>
+      <div class="interest-row">
+        <div class="interest reveal">⚡ <span>Embedded Technology</span></div>
+        <div class="interest reveal">🔧 <span>Hardware Tinkering</span></div>
+        <div class="interest reveal">💡 <span>Problem Solving</span></div>
+        <div class="interest reveal">📚 <span>Continuous Learning</span></div>
+      </div>
+    </section>
+
+    <section id="contact" class="section container contact-section">
+      <div class="section-head reveal"><span>08.</span><h2>Let's Connect</h2></div>
+      <div class="contact-grid">
+        <div class="contact-copy reveal">
+          <p class="lead">Have an opportunity, project or collaboration in mind?</p>
+          <p>I'm open to learning opportunities, internships and entry-level embedded engineering roles.</p>
+          <a class="email" href="mailto:surya524111@gmail.com">surya524111@gmail.com</a>
+          <div class="contact-links"><a href="tel:+919585909079">+91 9585909079</a><a href="https://linkedin.com/in/surya-surya-a04950331" target="_blank">LinkedIn ↗</a><a href="https://github.com/surya-codes-24" target="_blank">GitHub ↗</a></div>
+        </div>
+        <form class="contact-form reveal" onsubmit="return sendMail(event)">
+          <input id="senderName" type="text" placeholder="Your name" required>
+          <input id="senderEmail" type="email" placeholder="Your email" required>
+          <textarea id="senderMessage" rows="5" placeholder="Your message" required></textarea>
+          <button class="btn primary" type="submit">Send Message →</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <span>© 2026 S. Surya</span>
+    <span>Built with HTML • CSS • JavaScript</span>
+    <a href="#home">Back to top ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
